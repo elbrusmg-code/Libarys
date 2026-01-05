@@ -1,0 +1,491 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3555D4D-7E3D-46A8-AA4E-D5D8D16F3FEF}|ManagmentUI\\ManagmentUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\managmentui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3555D4D-7E3D-46A8-AA4E-D5D8D16F3FEF}|ManagmentUI\\ManagmentUI.csproj|solutionrelative:managmentui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\businesslogiclayer\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\dataaccesslayer\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\businesslogiclayer\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\businesslogiclayer\\services\\contracts\\imemberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\contracts\\imemberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\dataaccesslayer\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\dataaccesslayer\\repositories\\memberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\memberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\businesslogiclayer\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\businesslogiclayer\\services\\contracts\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\contracts\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\dataaccesslayer\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\dataaccesslayer\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\dataaccesslayer\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\forms\\categorymenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\categorymenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\forms\\membermenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\membermenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\forms\\categorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\categorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\forms\\booksmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\booksmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\forms\\mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\libarymangui\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B78AB4-0A5E-ED1D-307D-E2EFB55206C5}|LibarySystemManag\\LibarySystemManag.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarysystemmanag\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B78AB4-0A5E-ED1D-307D-E2EFB55206C5}|LibarySystemManag\\LibarySystemManag.csproj|solutionrelative:libarysystemmanag\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\libarymangui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\libarymangui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\libarymangui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\libarymangui\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\libarymangui\\forms\\categorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\forms\\categorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\libarymangui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{701C7CC1-8176-43B6-BCD1-42008174727E}|LibaryMangUI\\LibaryMangUI.csproj|solutionrelative:libarymangui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\businesslogiclayer\\services\\contracts\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\contracts\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\dataaccesslayer\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\onedrive\\documentos\\codeacademy\\libarysystemmanag\\dataaccesslayer\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\ManagmentUI\\Program.cs",
+              "RelativeDocumentMoniker": "ManagmentUI\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\ManagmentUI\\Program.cs",
+              "RelativeToolTip": "ManagmentUI\\Program.cs",
+              "ViewState": "AgIAAPQDAAAAAAAAAAAAAAQEAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T16:24:57.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\CategoryService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T15:00:05.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\BookService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\BookService.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAcwMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:59:49.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Entities\\Book.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:52:48.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MemberService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\MemberService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\MemberService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\MemberService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\MemberService.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAUwJwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T15:00:28.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\Contracts\\IBookService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\Contracts\\IBookService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\Contracts\\IBookService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\Contracts\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:58:46.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Repositories\\BookRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Repositories\\BookRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\BookRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwG4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T16:22:16.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MemberRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Repositories\\MemberRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\MemberRepository.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Repositories\\MemberRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\MemberRepository.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAcwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:55:53.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAA0wIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:55:40.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IMemberService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\Contracts\\IMemberService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\Contracts\\IMemberService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\Contracts\\IMemberService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\Contracts\\IMemberService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:59:33.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MemberMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MemberMenu.Designer.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\MemberMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MemberMenu.Designer.cs",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\MemberMenu.Designer.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T16:02:49.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Entities\\Category.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T15:12:57.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Entities\\Member.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Member.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Entities\\Member.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T15:13:15.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoryMenu.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\CategoryMenu.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\CategoryMenu.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\CategoryMenu.cs",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\CategoryMenu.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T15:59:24.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\CategoryMenu.Designer.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\CategoryMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\CategoryMenu.Designer.cs",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\CategoryMenu.Designer.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T16:01:49.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MemberMenu.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MemberMenu.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\MemberMenu.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MemberMenu.cs",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\MemberMenu.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T16:03:02.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BooksMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\BooksMenu.Designer.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\BooksMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\BooksMenu.Designer.cs",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\BooksMenu.Designer.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAYwKIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T11:17:20.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MainMenu.Designer.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\MainMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MainMenu.Designer.cs",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\MainMenu.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T10:24:06.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LibaryMangUI.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\LibaryMangUI.csproj",
+              "RelativeDocumentMoniker": "LibaryMangUI\\LibaryMangUI.csproj",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\LibaryMangUI.csproj",
+              "RelativeToolTip": "LibaryMangUI\\LibaryMangUI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-04T10:15:21.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Form1.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Form1.cs",
+              "RelativeToolTip": "LibaryMangUI\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T20:15:03.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MainMenu.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MainMenu.cs [Design]",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T10:16:15.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Program.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Program.cs",
+              "RelativeToolTip": "LibaryMangUI\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADgvxYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T10:23:27.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibarySystemManag\\Program.cs",
+              "RelativeDocumentMoniker": "LibarySystemManag\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibarySystemManag\\Program.cs",
+              "RelativeToolTip": "LibarySystemManag\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T10:44:31.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MemberMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MemberMenu.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\MemberMenu.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\MemberMenu.cs [Design]",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\MemberMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T10:36:20.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CategoryMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\CategoryMenu.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Forms\\CategoryMenu.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Forms\\CategoryMenu.cs [Design]",
+              "RelativeToolTip": "LibaryMangUI\\Forms\\CategoryMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T10:36:05.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Form1.cs",
+              "RelativeDocumentMoniker": "LibaryMangUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\LibaryMangUI\\Form1.cs [Design]",
+              "RelativeToolTip": "LibaryMangUI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T20:14:37.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\Contracts\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\Contracts\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\BusinessLogicLayer\\Services\\Contracts\\ICategoryService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\Contracts\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:59:13.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Entities\\Entity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Entity.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Entities\\Entity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:08:27.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\DataAccessLayer\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:55:09.384Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
