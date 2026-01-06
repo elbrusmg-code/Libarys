@@ -773,6 +773,7 @@
 //    }
 //}
 
+using BusinessLogicLayer.Dtos;
 using BusinessLogicLayer.Services;
 using BusinessLogicLayer.Services.Contracts;
 using DataAccessLayer.Entities;
@@ -971,6 +972,14 @@ namespace ManagmentUI
 
         static void AddBook()
         {
+            var categories = _categoryService.GetAll();
+            if(categories.Count ==0)
+
+            {
+                Console.WriteLine("Evvelce Kategory Elave edin.");
+                return;
+
+            }
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("═══════════════════════════════════════════════════════════");
@@ -996,7 +1005,7 @@ namespace ManagmentUI
                 Console.Write("📁 Kateqoriya ID: ");
                 int categoryId = int.Parse(Console.ReadLine());
 
-                Book book = new Book
+                var dto = new BookCteateDto
                 {
                     Title = title,
                     Author = author,
@@ -1005,7 +1014,7 @@ namespace ManagmentUI
                     CategoryId = categoryId
                 };
 
-                _bookService.Add(book);
+                _bookService.Add(dto);
                 ShowSuccess("Kitab uğurla əlavə edildi!");
             }
             catch (Exception ex)
@@ -1210,7 +1219,16 @@ namespace ManagmentUI
                 if (!string.IsNullOrWhiteSpace(catStr))
                     book.CategoryId = int.Parse(catStr);
 
-                _bookService.Update(book);
+                var dto = new BookUptadeDto
+                {
+                    Id = book.Id,
+                    Title = book.Title,
+                    Author = book.Author,
+                    ISBN = book.ISBN,
+                    PublishedYear = book.PublishedYear,
+                    CategoryId = book.CategoryId,
+                };
+                _bookService.Update(dto);
                 ShowSuccess("Kitab uğurla yeniləndi!");
             }
             catch (Exception ex)
@@ -1322,13 +1340,13 @@ namespace ManagmentUI
                 Console.Write("📝 Təsvir: ");
                 string description = Console.ReadLine();
 
-                Category category = new Category
+                var categorys = new CategoryCreateDto
                 {
                     Name = name,
                     Description = description
                 };
 
-                _categoryService.Add(category);
+                _categoryService.Add(categorys);
                 ShowSuccess("Kateqoriya uğurla əlavə edildi!");
             }
             catch (Exception ex)
@@ -1476,7 +1494,13 @@ namespace ManagmentUI
                 if (!string.IsNullOrWhiteSpace(desc))
                     category.Description = desc;
 
-                _categoryService.Update(category);
+                var categorys = new CategoryUpdateDto
+                {
+                    Id = id,
+                    Name = name,
+                    Description = desc
+                };
+                _categoryService.Update(categorys);
                 ShowSuccess("Kateqoriya uğurla yeniləndi!");
             }
             catch (Exception ex)
@@ -1591,14 +1615,13 @@ namespace ManagmentUI
                 Console.Write("📱 Telefon (+994XXXXXXXXX): ");
                 string phone = Console.ReadLine();
 
-                Member member = new Member
+                var members = new MemberCreateDto
                 {
                     FullName = fullName,
                     Email = email,
                     PhoneNumber = phone
                 };
-
-                _memberService.Add(member);
+                _memberService.Add(members);
                 ShowSuccess("Üzv uğurla əlavə edildi!");
             }
             catch (Exception ex)
@@ -1792,7 +1815,15 @@ namespace ManagmentUI
                         member.IsActive = false;
                 }
 
-                _memberService.Update(member);
+                var members = new MemberUpdateDto
+                {
+                    Id = member.Id,
+                    FullName = member.FullName,
+                    Email = member.Email,
+                    PhoneNumber = member.PhoneNumber,
+                    IsActive = member.IsActive,
+                };
+                _memberService.Update(members);
                 ShowSuccess("Üzv uğurla yeniləndi!");
             }
             catch (Exception ex)

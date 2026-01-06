@@ -1,4 +1,5 @@
-﻿using BusinessLogicLayer.Services.Contracts;
+﻿using BusinessLogicLayer.Dtos;
+using BusinessLogicLayer.Services.Contracts;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
 using System;
@@ -15,15 +16,15 @@ namespace BusinessLogicLayer.Services
             _categoryRepository = categoryRepository;
         }
 
-        public void Add(Category category)
+        public void Add(CategoryCreateDto category)
         {
-            ValidateCategory(category);
-            var existingCate = _categoryRepository.GetAll();
-            if (existingCate.Any(c => c.Name.ToLower() == category.Name.ToLower()))
+            var categorys = new Category
             {
-                throw new Exception($"Bu kateqoriya adı artıq mövcuddur: {category.Name}");
-            }
-            _categoryRepository.Add(category);
+                Name = category.Name,
+                Description = category.Description,
+            };
+            ValidateCategory(categorys);
+            _categoryRepository.Add(categorys);
         }
 
         public void Delete(int id)
@@ -69,9 +70,10 @@ namespace BusinessLogicLayer.Services
            return _categoryRepository.Search(keyword);
         }
 
-        public void Update(Category category)
+        public void Update(CategoryUpdateDto category)
         {
-            if(category.Id <= 0)
+            var existingCategorys = _categoryRepository.GetAll();
+            if (category.Id <= 0)
             {
                 throw new Exception("ID müsbət olmalıdır!");
             }
@@ -80,14 +82,13 @@ namespace BusinessLogicLayer.Services
             {
                 throw new Exception($"Kateqoriya tapılmadı! ID: {category.Id}");
             }
-            ValidateCategory(category);
-
-            var existingCategorys = _categoryRepository.GetAll();
             if(existingCategorys.Any( c => c.Id != category.Id && c.Name.ToLower() == category.Name.ToLower() ))
             {
                 throw new Exception($"Bu kateqoriya adı artıq istifadə olunur: {category.Name}");
             }
-            _categoryRepository.Uptade(category);
+            categorys.Name = category.Name;
+            categorys.Description = category.Description;
+            _categoryRepository.Uptade(categorys);
         }
 
         private void ValidateCategory(Category category)

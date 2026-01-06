@@ -1,4 +1,5 @@
-﻿using BusinessLogicLayer.Services.Contracts;
+﻿using BusinessLogicLayer.Dtos;
+using BusinessLogicLayer.Services.Contracts;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
 using System;
@@ -16,24 +17,17 @@ namespace BusinessLogicLayer.Services
         {
             _memberRepository = memberRepository;
         }
-        public void Add(Member member)
+        public void Add(MemberCreateDto member)
         {
-            ValidateMember(member);
-            var members = _memberRepository.GetAll();
-            if (members.Any( m => m.Email.ToLower() == member.Email.ToLower()))
+            var members = new Member
             {
-                throw new Exception($"Bu email artıq mövcuddur: {member.Email}");
-            }
-            if(members.Any( m => m.PhoneNumber == member.PhoneNumber))
-            {
-                throw new Exception($"Bu telefon nömrəsi artıq mövcuddur: {member.PhoneNumber}");
-            }
-            if(member.MembershipDate == default(DateTime))
-            {
-                member.MembershipDate = DateTime.Now;
-            }
-            member.IsActive = true;
-            _memberRepository.Add(member);
+                FullName = member.FullName,
+                Email = member.Email,
+                PhoneNumber = member.PhoneNumber,
+                IsActive= true
+            };
+            ValidateMember(members);
+            _memberRepository.Add(members);
         }
 
         public void Delete(int id)
@@ -78,33 +72,23 @@ namespace BusinessLogicLayer.Services
             return _memberRepository.Search(keyword);
         }
 
-        public void Update(Member member)
+        public void Update(MemberUpdateDto member)
         {
             if (member.Id <= 0)
-            {
                 throw new Exception("ID müsbət olmalıdır!");
-            }
 
-            var existingMember = _memberRepository.GetById(member.Id);
-            if (existingMember == null)
-            {
+            var members = _memberRepository.GetById(member.Id);
+            if (member == null)
                 throw new Exception($"Üzv tapılmadı! ID: {member.Id}");
-            }
 
-            ValidateMember(member);
+            ValidateMember(members);
 
-            var existingMembers = _memberRepository.GetAll();
-            if (existingMembers.Any(m => m.Id != member.Id && m.Email.ToLower() == member.Email.ToLower()))
-            {
-                throw new Exception($"Bu email artıq istifadə olunur: {member.Email}");
-            }
+            member.FullName = member.FullName;
+            member.Email = member.Email;
+            member.PhoneNumber = member.PhoneNumber;
+            member.IsActive = member.IsActive;
 
-            if (existingMembers.Any(m => m.Id != member.Id && m.PhoneNumber == member.PhoneNumber))
-            {
-                throw new Exception($"Bu telefon nömrəsi artıq istifadə olunur: {member.PhoneNumber}");
-            }
-
-            _memberRepository.Uptade(member);
+            _memberRepository.Uptade(members);
         }
         private void ValidateMember(Member member)
         {
@@ -164,5 +148,9 @@ namespace BusinessLogicLayer.Services
             string pattern = @"^\+994[0-9]{9}$";
             return Regex.IsMatch(phone, pattern);
         }
+
+      
+
+      
     }
 }

@@ -12,7 +12,7 @@ namespace DataAccessLayer.Repositories
 
         private const string _path = @"C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\Data\\books.txt";
         private const int ID_LENGTH = 5;
-        //private const int MEMBER_ID_LENGTH = 5;
+        private const int MEMBER_ID_LENGTH = 5;
 
         private const int TITLE_LENGTH = 30;
         private const int AUTHOR_LENGTH = 25;
@@ -109,20 +109,20 @@ namespace DataAccessLayer.Repositories
             string isbn = book.ISBN.ToString().PadRight(ISBN_LENGTH);
             string year = book.PublishedYear.ToString().PadRight(YEAR_LENGTH,'0');
             string categoryId = book.CategoryId.ToString().PadRight(CATEGORY_ID_LENGTH,'0');
-            //string memberId = (book.MemberId ?? 0)
-            //.ToString()
-            //.PadRight(MEMBER_ID_LENGTH, '0');
+            string memberId = (book.MemberId ?? 0)
+            .ToString()
+            .PadRight(MEMBER_ID_LENGTH, '0');
             //string memberId = (book.MemberId ?? 0).ToString().PadLeft(MEMBER_ID_LENGTH, '0');
             //string memberId = (book.MemberId ?? 0).ToString().PadLeft(MEMBER_ID_LENGTH, '0');
             string isAvailble =  book.IsAvailable ? "1" : "0";
 
-            return id + title + author + isbn + year + categoryId + isAvailble;
+            return id + title + author + isbn + year + categoryId+memberId + isAvailble;
 
         }
 
         private Book ParseFromLine(string line)
         {
-            if (line.Length < ID_LENGTH + TITLE_LENGTH + AUTHOR_LENGTH + ISBN_LENGTH+YEAR_LENGTH +CATEGORY_ID_LENGTH   + IS_AVAILABLE_LENGTH)
+            if (line.Length < ID_LENGTH + TITLE_LENGTH + AUTHOR_LENGTH + ISBN_LENGTH+YEAR_LENGTH +CATEGORY_ID_LENGTH + MEMBER_ID_LENGTH + IS_AVAILABLE_LENGTH)
             {
                 throw new Exception("Fayl Formati Duzgun Deyil!");
             }
@@ -140,7 +140,9 @@ namespace DataAccessLayer.Repositories
             book.PublishedYear = int.Parse(line.Substring(pos,YEAR_LENGTH).Trim());
             pos += YEAR_LENGTH;
             book.CategoryId = int.Parse(line.Substring(pos,CATEGORY_ID_LENGTH).Trim());
-            
+            int memberId = int.Parse(line.Substring(pos, MEMBER_ID_LENGTH).Trim());
+            book.MemberId = memberId == 0 ? null : memberId;
+            pos += MEMBER_ID_LENGTH;
             book.IsAvailable = line.Substring(pos, IS_AVAILABLE_LENGTH) == "1";
             
 

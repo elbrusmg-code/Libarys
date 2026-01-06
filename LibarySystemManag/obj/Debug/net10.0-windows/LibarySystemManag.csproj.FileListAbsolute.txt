@@ -1,0 +1,7 @@
+C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\LibarySystemManag\obj\Debug\net10.0-windows\LibarySystemManag.Form1.resources
+C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\LibarySystemManag\obj\Debug\net10.0-windows\LibarySystemManag.csproj.GenerateResource.cache
+C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\LibarySystemManag\obj\Debug\net10.0-windows\LibarySystemManag.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\LibarySystemManag\obj\Debug\net10.0-windows\LibarySystemManag.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\LibarySystemManag\obj\Debug\net10.0-windows\LibarySystemManag.AssemblyInfo.cs
+C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\LibarySystemManag\obj\Debug\net10.0-windows\LibarySystemManag.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\LibarySystemManag\obj\Debug\net10.0-windows\LibarySystemManag.sourcelink.json

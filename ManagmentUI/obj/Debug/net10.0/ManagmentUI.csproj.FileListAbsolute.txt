@@ -18,3 +18,4 @@ C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\ManagmentUI\obj\
 C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\ManagmentUI\obj\Debug\net10.0\ManagmentUI.pdb
 C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\ManagmentUI\obj\Debug\net10.0\ManagmentUI.genruntimeconfig.cache
 C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\ManagmentUI\obj\Debug\net10.0\ref\ManagmentUI.dll
+C:\Users\User\OneDrive\Documentos\codeacademy\LibarySystemManag\ManagmentUI\obj\Debug\net10.0\ManagmentUI.sourcelink.json

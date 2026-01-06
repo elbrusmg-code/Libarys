@@ -14,8 +14,5 @@
   <Folder Name="/Libary/LibaryUI/">
     <Project Path="ManagmentUI/ManagmentUI.csproj" Id="c3555d4d-7e3d-46a8-aa4e-d5d8d16f3fef" />
   </Folder>
-  <Folder Name="/LibaryManUi/">
-    <Project Path="LibaryMangUI/LibaryMangUI.csproj" Id="701c7cc1-8176-43b6-bcd1-42008174727e" />
-  </Folder>
   <Project Path="LibarySystemManag/LibarySystemManag.csproj" />
 </Solution>
