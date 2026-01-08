@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Transactions;
+
 
 namespace BusinessLogicLayer.Services
 {
@@ -15,19 +17,17 @@ namespace BusinessLogicLayer.Services
         private readonly IRepository<Book> _bookRepository;
         private readonly IRepository<Category> _categoryRepository;
         private readonly IRepository<Member> _memberRepository;
-        public BookService(IRepository<Book> bookRepository, IRepository<Category> categoryRepository, IRepository<Member> memberRepository )
+        private readonly OperationsRepository _operationRepository;
+        public BookService(IRepository<Book> bookRepository, IRepository<Category> categoryRepository, 
+            IRepository<Member> memberRepository, OperationsRepository operationRepository)
         {
             _bookRepository = bookRepository;
             _categoryRepository = categoryRepository;
             _memberRepository = memberRepository;
+            _operationRepository = operationRepository;
         }
 
-        public BookService(BookRepository bookRepository, CategoryRepository categoryRepository)
-        {
-            _bookRepository = bookRepository;
-            _categoryRepository = categoryRepository;
-        }
-
+       
         public void Add(BookCteateDto bookDto)
         {
             var book = new Book
@@ -88,16 +88,35 @@ namespace BusinessLogicLayer.Services
 
         public void Update(BookUptadeDto bookUp)
         {
+          
+            if (bookUp == null)
+                throw new Exception("Məlumat boşdur!");
+
+            if (bookUp.Id <= 0)
+                throw new Exception("ID düzgün deyil!");
+
             var book = _bookRepository.GetById(bookUp.Id);
             if (book == null)
                 throw new Exception("Kitab tapılmadı!");
 
+            
+            var category = _categoryRepository.GetById(bookUp.CategoryId);
+            if (category == null)
+                throw new Exception("Seçilmiş kateqoriya mövcud deyil!");
+
+            
+            bool isbnExists = _bookRepository
+                .GetAll()
+                .Any(b => b.ISBN == bookUp.ISBN && b.Id != bookUp.Id);
+
+            if (isbnExists)
+                throw new Exception("Bu ISBN başqa kitabda mövcuddur!");
             book.Title = bookUp.Title;
             book.Author = bookUp.Author;
             book.ISBN = bookUp.ISBN;
             book.PublishedYear = bookUp.PublishedYear;
             book.CategoryId = bookUp.CategoryId;
-
+            book.IsAvailable = bookUp.IsAvailable;
             ValidateBook(book);
             _bookRepository.Uptade(book);
         }
@@ -121,13 +140,22 @@ namespace BusinessLogicLayer.Services
                 book.IsAvailable = false;
 
                 _bookRepository.Uptade(book);
+
+                var operations = new Operation
+                {
+                    BookId = bookId,
+                    MemberId = memberId,
+                    BorrowDate = DateTime.Now,
+                    IsReturned = false
+                };
+                _operationRepository.Add(operations);
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
-        
+
 
         public void ReturnBook(int bookId)
         {
@@ -138,11 +166,57 @@ namespace BusinessLogicLayer.Services
             if (book.IsAvailable)
                 throw new Exception("Bu kitab artıq kitabxanadadır!");
 
-            book.IsAvailable = true;
+            var activeOperation = _operationRepository
+                    .GetActiveOperations()
+                    .FirstOrDefault(t => t.BookId == bookId);
 
+            if (activeOperation != null)
+            {
+                
+                activeOperation.ReturnDate = DateTime.Now;
+                activeOperation.IsReturned = true;
+                _operationRepository.Uptade(activeOperation);
+            }
+
+           
+            book.IsAvailable = true;
+            book.MemberId = null;
             _bookRepository.Uptade(book);
+          }
+
+        public List<Operation> GetActiveOperations()
+        {
+            return _operationRepository.GetActiveOperations();
         }
 
+
+
+
+        public List<Operation> GetOperationHistory(int? bookId = null, int? memberId = null)
+        {
+            var transactions = _operationRepository.GetAll();
+
+            if (bookId.HasValue)
+                transactions = transactions.Where(t => t.BookId == bookId.Value).ToList();
+
+            if (memberId.HasValue)
+                transactions = transactions.Where(t => t.MemberId == memberId.Value).ToList();
+
+           
+            var books = _bookRepository.GetAll();
+            var members = _memberRepository.GetAll();
+
+            foreach (var transaction in transactions)
+            {
+                var book = books.FirstOrDefault(b => b.Id == transaction.BookId);
+                var member = members.FirstOrDefault(m => m.Id == transaction.MemberId);
+
+                transaction.BookTitle = book?.Title ?? "Naməlum";
+                transaction.MemberName = member?.FullName ?? "Naməlum";
+            }
+
+            return transactions.OrderByDescending(t => t.BorrowDate).ToList();
+        }
         private void ValidateBook(Book book)
         {
             if (string.IsNullOrWhiteSpace(book.Title))
@@ -219,6 +293,7 @@ namespace BusinessLogicLayer.Services
             int check = (10 - (sum % 10)) % 10;
             return check == isbn[12] - '0';
         }
+     
     }
 
 

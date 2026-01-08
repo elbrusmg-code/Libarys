@@ -17,6 +17,8 @@
         public string ISBN { get; set; }
         public int PublishedYear { get; set; }
         public int CategoryId { get; set; }
+        public bool IsAvailable { get; set; }
+
 
     }
 }

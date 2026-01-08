@@ -13,5 +13,9 @@ namespace BusinessLogicLayer.Services.Contracts
         Book GetById(int id);
         List<Book> GetAll();
         List<Book> Search(string keyword);
+        void BorrowBook(int bookId, int memberId);
+        void ReturnBook(int bookId);
+        List<Operation> GetActiveOperations();
+        List<Operation> GetOperationHistory(int? bookId = null, int? memberId = null);
     }
 }

@@ -8,7 +8,8 @@ namespace DataAccessLayer.Repositories
     public class CategoryRepository : IRepository<Category>
     {
 
-        private const string _path = @"C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\Data\\categories.txt";
+        private static readonly string _path = Path.Combine(Directory.GetCurrentDirectory(), "categories.txt");
+
 
         private const int ID_LENGTH = 5;
         private const int NAME_LENGTH = 30;

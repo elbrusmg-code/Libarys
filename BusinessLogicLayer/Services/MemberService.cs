@@ -12,10 +12,12 @@ namespace BusinessLogicLayer.Services
     public class MemberService : IMemberService
     {
         private readonly IRepository<Member> _memberRepository;
+        private readonly IRepository<Book> _bookRepository;
 
-        public MemberService(IRepository<Member> memberRepository)
+        public MemberService(IRepository<Member> memberRepository, IRepository<Book> bookRepository)
         {
             _memberRepository = memberRepository;
+            _bookRepository = bookRepository;
         }
         public void Add(MemberCreateDto member)
         {
@@ -27,6 +29,19 @@ namespace BusinessLogicLayer.Services
                 IsActive= true
             };
             ValidateMember(members);
+            var existingMembers = _memberRepository.GetAll();
+
+            if (existingMembers.Any(m =>
+                m.Email.Trim().ToLower() == member.Email.Trim().ToLower()))
+            {
+                throw new Exception("Bu email artıq istifadə olunur!");
+            }
+
+            if (existingMembers.Any(m =>
+                m.PhoneNumber.Trim() == member.PhoneNumber.Trim()))
+            {
+                throw new Exception("Bu telefon nömrəsi artıq istifadə olunur!");
+            }
             _memberRepository.Add(members);
         }
 
@@ -72,24 +87,58 @@ namespace BusinessLogicLayer.Services
             return _memberRepository.Search(keyword);
         }
 
+      
         public void Update(MemberUpdateDto member)
         {
             if (member.Id <= 0)
                 throw new Exception("ID müsbət olmalıdır!");
 
             var members = _memberRepository.GetById(member.Id);
-            if (member == null)
+            if (members == null)
                 throw new Exception($"Üzv tapılmadı! ID: {member.Id}");
+
+            var existingMembers = _memberRepository.GetAll();
+
+            if (existingMembers.Any(m =>
+                m.Id != member.Id &&
+                m.Email.Trim().ToLower() == member.Email.Trim().ToLower()))
+            {
+                throw new Exception("Bu email artıq istifadə olunur!");
+            }
+
+            if (existingMembers.Any(m =>
+                m.Id != member.Id &&
+                m.PhoneNumber.Trim() == member.PhoneNumber.Trim()))
+            {
+                throw new Exception("Bu telefon nömrəsi artıq istifadə olunur!");
+            }
+
+           
+            members.FullName = member.FullName;
+            members.Email = member.Email;
+            members.PhoneNumber = member.PhoneNumber;
+            members.IsActive = member.IsActive;
 
             ValidateMember(members);
 
-            member.FullName = member.FullName;
-            member.Email = member.Email;
-            member.PhoneNumber = member.PhoneNumber;
-            member.IsActive = member.IsActive;
-
             _memberRepository.Uptade(members);
+
+            
+            if (!members.IsActive)
+            {
+                var books = _bookRepository.GetAll()
+                    .Where(b => b.MemberId == members.Id && !b.IsAvailable)
+                    .ToList();
+
+                foreach (var book in books)
+                {
+                    book.IsAvailable = true;
+                    book.MemberId = null;
+                    _bookRepository.Uptade(book);
+                }
+            }
         }
+
         private void ValidateMember(Member member)
         {
             if (string.IsNullOrWhiteSpace(member.FullName))

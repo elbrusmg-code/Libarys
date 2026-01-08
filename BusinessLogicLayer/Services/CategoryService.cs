@@ -18,13 +18,26 @@ namespace BusinessLogicLayer.Services
 
         public void Add(CategoryCreateDto category)
         {
-            var categorys = new Category
+         try
             {
-                Name = category.Name,
-                Description = category.Description,
-            };
-            ValidateCategory(categorys);
-            _categoryRepository.Add(categorys);
+                var categorys = new Category
+                {
+                    Name = category.Name,
+                    Description = category.Description,
+                };
+
+                ValidateCategory(categorys);
+                var existingCategories = _categoryRepository.GetAll();
+                if (existingCategories.Any(c => c.Name.Trim().ToLower() == category.Name.Trim().ToLower()))
+                {
+                    throw new Exception($"Bu kateqoriya adı artıq istifadə olunur: {category.Name}");
+                }
+                _categoryRepository.Add(categorys);
+            }
+            catch(Exception ex) 
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public void Delete(int id)
@@ -93,22 +106,29 @@ namespace BusinessLogicLayer.Services
 
         private void ValidateCategory(Category category)
         {
-            if (string.IsNullOrWhiteSpace(category.Name))
+           try
             {
-                throw new Exception("Kateqoriya adı boş ola bilməz!");
-            }
-            if (category.Name.Length > 30)
-            {
-                throw new Exception("Kateqoriya adı maksimum 30 simvol ola bilər!");
-            }
+                if (string.IsNullOrWhiteSpace(category.Name))
+                {
+                    throw new Exception("Kateqoriya adı boş ola bilməz!");
+                }
+                if (category.Name.Length > 30)
+                {
+                    throw new Exception("Kateqoriya adı maksimum 30 simvol ola bilər!");
+                }
 
-            if (string.IsNullOrWhiteSpace(category.Description))
-            {
-                throw new Exception("Təsvir boş ola bilməz!");
+                if (string.IsNullOrWhiteSpace(category.Description))
+                {
+                    throw new Exception("Təsvir boş ola bilməz!");
+                }
+                if (category.Description.Length > 50)
+                {
+                    throw new Exception("Təsvir maksimum 50 simvol ola bilər!");
+                }
             }
-            if (category.Description.Length > 50)
+            catch(Exception ex) 
             {
-                throw new Exception("Təsvir maksimum 50 simvol ola bilər!");
+                throw new Exception(ex.Message);
             }
         }
     }

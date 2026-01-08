@@ -7,12 +7,16 @@
     <Project Path="DataAccessLayer/DataAccessLayer.csproj" />
   </Folder>
   <Folder Name="/Libary/Data/">
-    <File Path="books.txt" />
-    <File Path="categories.txt" />
-    <File Path="members.txt" />
+    <File Path="Data/books.txt" />
+    <File Path="Data/categories.txt" />
+    <File Path="Data/members.txt" />
+    <File Path="Data/operations.txt" />
   </Folder>
   <Folder Name="/Libary/LibaryUI/">
     <Project Path="ManagmentUI/ManagmentUI.csproj" Id="c3555d4d-7e3d-46a8-aa4e-d5d8d16f3fef" />
+  </Folder>
+  <Folder Name="/Libary/ManagUIForm/">
+    <Project Path="MangLibaryForm/MangLibaryForm.csproj" Id="8e556218-f12a-4406-a2c6-4bca26877400" />
   </Folder>
   <Project Path="LibarySystemManag/LibarySystemManag.csproj" />
 </Solution>

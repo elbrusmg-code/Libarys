@@ -7,7 +7,7 @@ namespace DataAccessLayer.Repositories
 {
     public class MemberRepository : IRepository<Member>
     {
-        private const string _path = @"C:\\Users\\User\\OneDrive\\Documentos\\codeacademy\\LibarySystemManag\\Data\\members.txt";
+        private static readonly string _path = Path.Combine(Directory.GetCurrentDirectory(), "members.txt");
         private const int ID_LENGTH = 5;
         private const int FULLNAME_LENGTH = 30;
         private const int EMAIL_LENGTH = 35;
@@ -33,15 +33,7 @@ namespace DataAccessLayer.Repositories
         public void Add(Member entity)
         {
             var members = GetAll();
-            //if(members.Any(m => m.Email.ToLower() == entity.Email.ToLower()))
-            //{
-            //    throw new Exception($"Bu email artıq mövcuddur: {entity.Email}");
-            //}
-
-            //if(members.Any(m =>m.PhoneNumber.ToLower() == entity.PhoneNumber.ToLower()))
-            //{
-            //    throw new Exception($"Bu telefon nömrəsi artıq mövcuddur: {entity.PhoneNumber}");
-            //}
+            
 
             entity.Id = members.Any() ? members.Max(m => m.Id) + 1 : 1;
             if(entity.MembershipDate == default(DateTime))
