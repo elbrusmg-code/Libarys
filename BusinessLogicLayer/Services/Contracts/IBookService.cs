@@ -17,5 +17,6 @@ namespace BusinessLogicLayer.Services.Contracts
         void ReturnBook(int bookId);
         List<Operation> GetActiveOperations();
         List<Operation> GetOperationHistory(int? bookId = null, int? memberId = null);
+        void DeactivateMemberAndReturnBooks(int memberId);
     }
 }

@@ -217,6 +217,44 @@ namespace BusinessLogicLayer.Services
 
             return transactions.OrderByDescending(t => t.BorrowDate).ToList();
         }
+
+        public void DeactivateMemberAndReturnBooks(int memberId)
+        {
+            var member = _memberRepository.GetById(memberId);
+            if (member == null)
+                throw new Exception("Üzv tapılmadı!");
+
+            if (!member.IsActive)
+                return; 
+
+           
+            var activeOperations = _operationRepository
+                .GetActiveOperations()
+                .Where(op => op.MemberId == memberId)
+                .ToList();
+
+            
+            foreach (var operation in activeOperations)
+            {
+               
+                operation.ReturnDate = DateTime.Now;
+                operation.IsReturned = true;
+                _operationRepository.Uptade(operation);
+
+               
+                var book = _bookRepository.GetById(operation.BookId);
+                if (book != null)
+                {
+                    book.IsAvailable = true;
+                    book.MemberId = null;
+                    _bookRepository.Uptade(book);
+                }
+            }
+
+            
+            member.IsActive = false;
+            _memberRepository.Uptade(member);
+        }
         private void ValidateBook(Book book)
         {
             if (string.IsNullOrWhiteSpace(book.Title))

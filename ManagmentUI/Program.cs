@@ -1310,7 +1310,9 @@ namespace ManagmentUI
 
                 if (confirm.ToLower() == "b")
                 {
+                    _bookService.DeactivateMemberAndReturnBooks(id);
                     _memberService.Delete(id);
+                   
                     ShowSuccess("Üzv uğurla silindi!");
                 }
                 else

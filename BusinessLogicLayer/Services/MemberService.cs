@@ -138,7 +138,7 @@ namespace BusinessLogicLayer.Services
                 }
             }
         }
-
+       
         private void ValidateMember(Member member)
         {
             if (string.IsNullOrWhiteSpace(member.FullName))
